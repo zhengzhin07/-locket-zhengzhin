@@ -1,0 +1,1 @@
+Bản tùy chỉnh Zhengzhin dựa trên mã MIT của Cuios-shop/locket_cuios_stable, commit 3ec6f2ef7d0b00a160cf8c01b40c5f21a42610e4, Copyright (c) 2026 Cuongqtx11. Giữ nguyên thông báo giấy phép trong LICENSE. Tên hiển thị, đường dẫn và mã định danh của bản tùy chỉnh đã được đổi thành Zhengzhin; ghi nhận nguồn không có nghĩa đây là tác giả của bản tùy chỉnh.

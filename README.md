@@ -1,17 +1,23 @@
-# Locket Zhengzhin — bản nền
+# Locket Zhengzhin
 
-Repo dành riêng cho Locket: `zhengzhin07/locket-zhengzhin`, nhánh `main`.
+Bản đổi tên cho repo `zhengzhin07/-locket-zhengzhin`, nhánh `main`.
 
-Giải nén gói tải về rồi tải 4 tệp `Locket-Zhengzhin.sgmodule`, `locket.js`, `LICENSE`, `README.md` vào thẳng thư mục gốc của repo mới này. Không tải nguyên ZIP và không thêm thư mục bọc bên ngoài.
+Các nhãn hiển thị, log, rule, ID ghi chú/khung, ETag và tên lưu chẩn đoán đã dùng Zhengzhin. Các URL ảnh trỏ vào `assets/` của repo này. Tính năng media/Looks và cấu trúc runtime giữ theo bản nền 4.0.4; chưa thử trên iPhone, chưa thêm các khung ảnh riêng.
 
-Sau khi Commit changes, URL module là:
+## Tải lên
 
-https://raw.githubusercontent.com/zhengzhin07/locket-zhengzhin/main/Locket-Zhengzhin.sgmodule
+Giải nén gói cập nhật. Trong repo `-locket-zhengzhin`, tải lại các tệp ở thư mục gốc và thư mục `assets` bên cạnh `locket.js`. Không tải nguyên ZIP, không tạo thư mục bọc.
 
-Nhập URL đó trong Shadowrocket, chỉ bật một module Locket. Script phải tải được từ:
+Nếu dùng máy tính, kéo toàn bộ nội dung đã giải nén vào Add file → Upload files và Commit changes. Gói đã chọn các ảnh thực sự được runtime dùng để số tệp nhỏ hơn 100.
 
-https://raw.githubusercontent.com/zhengzhin07/locket-zhengzhin/main/locket.js
+Module:
+https://raw.githubusercontent.com/zhengzhin07/-locket-zhengzhin/main/Locket-Zhengzhin.sgmodule
 
-Đây là bản nền, giữ nguyên mã v4.0.4 từ Cuios-shop/locket_cuios_stable, commit 3ec6f2ef7d0b00a160cf8c01b40c5f21a42610e4. Mã nguồn JS được tự host sau khi tải lên. Ảnh khung Aura và ảnh nền ghi chú hiện vẫn trỏ tới tài nguyên công khai của nguồn gốc. Chưa thêm 10 ảnh khung riêng hoặc khung động; chưa thử trên iPhone.
+Tải lại module trong Shadowrocket để dùng bản JS mới; chỉ bật một module Locket. Query `?v=zhengzhin-1` giúp Shadowrocket lấy script mới khi chuyển sang bản đổi tên.
 
-Muốn chỉnh chức năng về sau: sửa `locket.js` và commit bản mới; nếu đổi tên/đường dẫn script cần sửa script-path tương ứng trong module. Giữ LICENSE của mã gốc (MIT).
+Trang chẩn đoán mới:
+http://zhengzhin-status.invalid/status
+
+Sau khi tải tệp lên, các URL PNG và JS phải mở được công khai. Bản đổi tên dùng mã chẩn đoán lưu riêng nên chưa có trạng thái cũ cho tới khi ứng dụng gửi request mới.
+
+Giấy phép nguồn và ghi nhận tác giả gốc vẫn giữ trong LICENSE và NOTICE.txt. Bản này sao chép ảnh cần dùng, không thay nội dung thiết kế của các PNG gốc.
