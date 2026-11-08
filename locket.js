@@ -11,15 +11,21 @@
   var VIDEO_SECONDS = 60;
   var VIDEO_BYTES = 100 * 1024 * 1024;
   var ASSET_BASE = "https://raw.githubusercontent.com/zhengzhin07/-locket-zhengzhin/main/";
+  var BUILD = "zhengzhin-custom-2";
+  var MEMBER_SINCE = "2007-03-16T00:00:00Z";
+  var FRAME_SETTINGS_KEY = "ZHENGZHIN_WIDGET_SELECTION_V1";
+  var FRAME_CHOICES = [{"id":"conan","name":"Conan","file":"frame-conan.png","revision":"6833730b75e5"},{"id":"kitty","name":"Hello Kitty","file":"frame-kitty.png","revision":"bf7ace2db7b2"},{"id":"masha","name":"Masha và Gấu","file":"frame-masha.png","revision":"da04c824b554"},{"id":"niko","name":"Niko Chan","file":"frame-niko.png","revision":"5c9ae7a35213"},{"id":"truong-giang","name":"Trường Giang Bá Khí","file":"frame-truong-giang.png","revision":"4015449c60c2"},{"id":"shizuka","name":"Doraemon và Shizuka","file":"frame-shizuka.png","revision":"567c3b29a080"},{"id":"anime","name":"Anime tím","file":"frame-anime.png","revision":"f39deb6a8ff6"},{"id":"nezuko","name":"Nezuko","file":"frame-nezuko.png","revision":"056693418752"},{"id":"cr7","name":"CR7","file":"frame-cr7.png","revision":"4cfd636e56d0"},{"id":"shin","name":"Shin","file":"frame-shin.png","revision":"3a8ac597638e"}];
   // BEGIN GENERATED CAPTION CATALOGUE
-  var CAPTIONS = [{"id":"brand","section":"Zhengzhin • Cá nhân","background":"brand","items":[["certificate","github.com/zhengzhin07","👑"],["copyright","Phiên bản Zhengzhin","✨"],["cun","Zhengzhin","🍤"],["tom","zhengzhin07","💛"]]},{"id":"tease","section":"Trêu đùa","background":"tease","items":[["pretend","Thấy tớ rồi, đừng giả vờ","😏",{"style":"prism","image":"tease_pretend-f0846303d0.png","colors":["#0D201A","#2D503E"]}],["look","Nhìn gì, thích tớ à?","👀",{"style":"prism","image":"tease_look-b1be52f1aa.png","colors":["#100F30","#272350"]}],["shy","Thả tim đi, đừng ngại","💛",{"style":"silk","image":"tease_shy-afc122d686.png","colors":["#2C112F","#6A284E"]}],["remember","Xem ảnh hay đang nhớ tớ?","🤭",{"style":"galaxy","image":"tease_remember-e46956e6d9.png","colors":["#132642","#204E6F"]}],["flirt","Cười gì? Đang thả thính đấy","🎣",{"style":"ember","image":"tease_flirt-55fe53fb40.png","colors":["#271426","#5D3B4F"]}],["know","Tớ xinh, tớ biết rồi","💅",{"style":"bloom","image":"tease_know-84f2fe795a.png","colors":["#081D2C","#0F4D4C"]}],["selective","Độc thân có chọn lọc","😌",{"style":"galaxy","image":"tease_selective-58cab08195.png","colors":["#13192C","#314268"]}],["longlook","Cậu nhìn lâu là tớ ngại","🙈",{"style":"silk","image":"tease_longlook-a11fbff776.png","colors":["#0E1B2F","#1F4D6E"]}],["loveplease","Đã xem thì phải thương","🥺",{"style":"aurora","image":"tease_loveplease-1edeb63ff3.png","colors":["#102036","#1A3E5A"]}],["space","Tim cậu còn chỗ không?","💘",{"style":"bloom","image":"tease_space-3d02cc2d7c.png","colors":["#12243E","#193D59"]}],["fee","Ảnh miễn phí, nhớ tớ tính tiền","🤑",{"style":"sunset","image":"tease_fee-7d4a38e239.png","colors":["#13253F","#1A405C"]}],["behave","Đang ngoan, đừng chọc","😼",{"style":"aurora","image":"tease_behave-9c87deb363.png","colors":["#281527","#472C3D"]}],["price","Không chảnh, chỉ hơi đắt giá","👑",{"style":"prism","image":"tease_price-93ac92e098.png","colors":["#20120B","#57381C"]}],["early","Chưa yêu mà nhớ hơi nhiều","🫣",{"style":"hologram","image":"tease_early-31297fbbd8.png","colors":["#0E231C","#345B47"]}],["closer","Thích thì nhích lại đây","🫶",{"style":"neon","image":"tease_closer-5cc9f1b9f8.png","colors":["#071A27","#0D4445"]}],["reply","Không rep là tớ dỗi","😤",{"style":"bloom","image":"tease_reply-32a8659a82.png","colors":["#100F2F","#322C63"]}],["attention","Xin vía được cậu để ý","✨",{"style":"aurora","image":"tease_attention-5f4b7508c2.png","colors":["#28170E","#51341A"]}],["order","Chốt đơn một người thương","🛒",{"style":"sunset","image":"tease_order-d36026ff6c.png","colors":["#15143E","#352E68"]}],["secret","Nhìn vậy thôi, mê cậu lắm","🤫",{"style":"aurora","image":"tease_secret-b05c31f9c6.png","colors":["#071A29","#0F4E4D"]}],["standstill","Đứng yên, tớ thả thính","🎯",{"style":"bloom","image":"tease_standstill-0ccc54c5db.png","colors":["#102126","#204446"]}],["cute","Xinh thế này ai chịu nổi","😎",{"style":"sunset","image":"tease_cute-793e004adc.png","colors":["#132D25","#2B4D3C"]}],["seen","Xem rồi thì nhớ tớ đi","👀",{"style":"ocean","image":"tease_seen-b538b442f7.png","colors":["#0F0F2E","#272350"]}],["crush","Đẹp vậy mà vẫn độc thân","😌",{"style":"liquid","image":"tease_crush-2af64e8a2c.png","colors":["#2A180F","#5F3D1F"]}],["heart","Lỡ xem là phải thả tim","😏",{"style":"liquid","image":"tease_heart-7dbc4a025d.png","colors":["#1D1134","#492C66"]}],["busy","Bận đáng yêu, lát nhắn","💅",{"style":"ocean","image":"tease_busy-9d8e692d0d.png","colors":["#143128","#2A4A3A"]}],["snack","Không giận, chỉ thiếu trà sữa","🧋",{"style":"hologram","image":"tease_snack-427794f461.png","colors":["#13253F","#1D4766"]}],["signal","Phát tín hiệu: nhớ bạn","📡",{"style":"aurora","image":"tease_signal-c3538be808.png","colors":["#2D182C","#543548"]}],["sleep","Online đó, nhưng buồn ngủ","😴",{"style":"liquid","image":"tease_sleep-b1b4b104db.png","colors":["#1B1C36","#32354F"]}],["model","Camera thường, người phi thường","🤳",{"style":"cyber","image":"tease_model-3530c6174f.png","colors":["#23143D","#492C67"]}],["notice","Thông báo: cần được cưng","📣",{"style":"galaxy","image":"tease_notice-478808ea82.png","colors":["#0D1A2D","#1F4D6E"]}]]},{"id":"humor","section":"Hài hước","background":"joy","items":[["wallet","Ví mỏng, tâm hồn phú hộ","💸",{"style":"bloom","image":"humor_wallet-feaaa2472a.png","colors":["#28161A","#4B2726"]}],["deadline","Deadline dí, tớ vẫn lì","🫠",{"style":"sunset","image":"humor_deadline-c0a4555844.png","colors":["#143128","#325744"]}],["attitude","Hết tiền nhưng còn thần thái","😎",{"style":"prism","image":"humor_attitude-cad748e545.png","colors":["#1B0F2F","#4D2E6C"]}],["awake","Dậy rồi, hồn chưa tới","👻",{"style":"prism","image":"humor_awake-a37aec1770.png","colors":["#181930","#3F4462"]}],["natural","Đẹp tự nhiên, lười tự phát","🦥",{"style":"ember","image":"humor_natural-c8445ca789.png","colors":["#12262B","#204547"]}],["maintenance","Não đang bảo trì","🧠",{"style":"aurora","image":"humor_maintenance-7de1434483.png","colors":["#250E28","#562041"]}],["eatfirst","Ăn trước, tính sau","🍜",{"style":"sunset","image":"humor_eatfirst-7da6f87d0b.png","colors":["#0F1D33","#1C4463"]}],["salary","Lương chưa về, đơn đã tới","📦",{"style":"aurora","image":"humor_salary-540a1e85e4.png","colors":["#111032","#2C2758"]}],["rest","Chăm chỉ nghỉ ngơi","🛌",{"style":"silk","image":"humor_rest-61d8a54865.png","colors":["#23140C","#59391D"]}],["hungry","Bụng đói, miệng vẫn cười","😋",{"style":"cyber","image":"humor_hungry-4698db8060.png","colors":["#141B30","#2F3F63"]}],["sleepy","Chưa giàu nhưng rất buồn ngủ","😴",{"style":"liquid","image":"humor_sleepy-166ae52e3a.png","colors":["#2B190F","#4E3219"]}],["lag","Mặt tỉnh, đầu đang lag","🌀",{"style":"neon","image":"humor_lag-bd502f912f.png","colors":["#311335","#552041"]}],["subject","Giỏi nhất môn nằm nghỉ","🏆",{"style":"galaxy","image":"humor_subject-f05e756e10.png","colors":["#143027","#294A3A"]}],["alarm","Sống lỗi với báo thức","⏰",{"style":"ocean","image":"humor_alarm-a5edf8a2f8.png","colors":["#151440","#272351"]}],["gossip","Pin yếu mà vẫn hóng","🍿",{"style":"silk","image":"humor_gossip-2f05829d4b.png","colors":["#17182E","#30344C"]}]]},{"id":"love","section":"Tình yêu","background":"love","items":[["choose","Tim tớ chọn cậu rồi","💗",{"style":"ocean","image":"love_choose-d96dce875d.png","colors":["#341C22","#5D312F"]}],["withyou","Đi đâu cũng muốn có cậu","🫶",{"style":"cyber","image":"love_withyou-82c81d9062.png","colors":["#29102C","#612448"]}],["soft","Gặp cậu là ngày đẹp","🌷",{"style":"prism","image":"love_soft-4a087f68fa.png","colors":["#2A1629","#674157"]}],["little","Thương cậu thêm một chút","💕",{"style":"cyber","image":"love_little-e322d0fa6d.png","colors":["#081E2F","#10504F"]}],["home","Bên cậu là thấy nhà","🏡",{"style":"neon","image":"love_home-cc1a3d73ef.png","colors":["#142A30","#22494A"]}],["hug","Gửi cậu một cái ôm","🤍",{"style":"bloom","image":"love_hug-49993c3c36.png","colors":["#1B1C36","#383C57"]}],["miss","Nhớ cậu, không cần lý do","💌",{"style":"liquid","image":"love_miss-24845da925.png","colors":["#071826","#105352"]}],["smile","Cậu cười là tớ thua","🥰",{"style":"ember","image":"love_smile-562e28ceee.png","colors":["#162D33","#1F4243"]}],["wait","Chừa một chỗ cạnh tớ nhé","💞",{"style":"hologram","image":"love_wait-a62057abc9.png","colors":["#141A2F","#314267"]}],["simple","Thích cậu, thế thôi","💘",{"style":"neon","image":"love_simple-bac6bedf2d.png","colors":["#081D2D","#115A58"]}]]},{"id":"joy","section":"Vui vẻ","background":"joy","items":[["enough","Hôm nay vui vừa đủ","🌞",{"style":"cyber","image":"joy_enough-dab80fd762.png","colors":["#2A1629","#664056"]}],["vitamin","Nạp một chút vitamin cười","🍊",{"style":"galaxy","image":"joy_vitamin-050193247d.png","colors":["#12233C","#173750"]}],["happy","Đang bận yêu đời","🌈",{"style":"liquid","image":"joy_happy-8b3b65a09e.png","colors":["#23143D","#3F265A"]}],["broadcast","Niềm vui đang phát sóng","📻",{"style":"bloom","image":"joy_broadcast-d016470dd7.png","colors":["#311B1F","#613330"]}],["sun","Mang nắng về nhà","☀️",{"style":"prism","image":"joy_sun-308e201e3c.png","colors":["#0A2437","#105453"]}],["luck","May mắn ghé chơi rồi","🍀",{"style":"ember","image":"joy_luck-023168ccbe.png","colors":["#100F2F","#282352"]}],["photo","Chụp vội một ngày xinh","📸",{"style":"ocean","image":"joy_photo-64672706c8.png","colors":["#261643","#472B65"]}],["weekend","Cuối tuần nằm trong tim","🎈",{"style":"ember","image":"joy_weekend-f1153a3a0d.png","colors":["#311B1F","#6C3935"]}],["save","Một ngày đáng lưu lại","✨",{"style":"liquid","image":"joy_save-4d16cb7762.png","colors":["#15143F","#352F68"]}],["laugh","Cười lên, ảnh đang đẹp","😆",{"style":"aurora","image":"joy_laugh-a8754e46e7.png","colors":["#0E221B","#2D4F3E"]}]]},{"id":"mood","section":"Cảm xúc","background":"mood","items":[["rain","Hôm nay lòng hơi mưa","🌧️",{"style":"sunset","image":"mood_rain-4a654b1ae3.png","colors":["#250E28","#5D2346"]}],["quiet","Cho tớ yên một chút","🌙",{"style":"silk","image":"mood_quiet-28172e70c4.png","colors":["#29102C","#511E3E"]}],["thought","Có vài điều chưa nói","💭",{"style":"ember","image":"mood_thought-6944e9a297.png","colors":["#111032","#272250"]}],["slow","Đang học cách chậm lại","🍃",{"style":"cyber","image":"mood_slow-a216d084c2.png","colors":["#122C24","#254334"]}],["hug","Một cái ôm là đủ","🫂",{"style":"liquid","image":"mood_hug-e4469b03ac.png","colors":["#15162A","#3B3F5B"]}],["tired","Hết pin, cần được thương","🪫",{"style":"ocean","image":"mood_tired-15625d5b32.png","colors":["#2A102D","#4E1D3C"]}],["okay","Không ổn cũng không sao","🤍",{"style":"neon","image":"mood_okay-f38da52d88.png","colors":["#351D22","#613330"]}],["hope","Ngày mai mình thử lại","🌅",{"style":"hologram","image":"mood_hope-245a949bbd.png","colors":["#121136","#302A60"]}],["memory","Có người nằm trong ký ức","🎞️",{"style":"neon","image":"mood_memory-23b05b34c1.png","colors":["#112138","#173750"]}],["feeling","Chẳng biết gọi tên cảm xúc","🫧",{"style":"sunset","image":"mood_feeling-4d86f30d50.png","colors":["#281745","#492C66"]}]]},{"id":"friends","section":"Bạn bè","background":"love","items":[["karma","Bạn thân, nghiệp ai nấy giữ","🤝",{"style":"neon","image":"friends_karma-a5bfb0375d.png","colors":["#0F0E2D","#302B60"]}],["stories","Có bạn là có chuyện kể","💬",{"style":"galaxy","image":"friends_stories-587481d12e.png","colors":["#251324","#563649"]}],["together","Đi cùng nhau mới vui","🎈",{"style":"prism","image":"friends_together-20f945b5cd.png","colors":["#2D1130","#4D1D3B"]}],["call","Bạn gọi, tớ có mặt","🫂",{"style":"silk","image":"friends_call-0b0e3e6484.png","colors":["#29161A","#4C2827"]}],["snacks","Đồng đội hệ ăn vặt","🍟",{"style":"galaxy","image":"friends_snacks-cf1c4b4c96.png","colors":["#13253F","#183A55"]}]]},{"id":"daily","section":"Đời thường","background":"mood","items":[["coffee","Cà phê trước, thế giới sau","☕",{"style":"hologram","image":"daily_coffee-db423704d1.png","colors":["#0F251E","#2B4D3C"]}],["study","Học một chút, mơ thật nhiều","📚",{"style":"ember","image":"daily_study-be2c48e577.png","colors":["#2C172B","#643F55"]}],["offwork","Tan làm là hồi sinh","🌅",{"style":"hologram","image":"daily_offwork-feab508772.png","colors":["#261642","#382251"]}],["anywhere","Đi đâu cũng được, miễn vui","🛵",{"style":"galaxy","image":"daily_anywhere-fe30e6bbd7.png","colors":["#161440","#26224E"]}],["ordinary","Ngày bình thường, ảnh xinh","📸",{"style":"neon","image":"daily_ordinary-1aa76b7bc0.png","colors":["#143027","#2D503E"]}]]},{"id":"confidence","section":"Tự tin · Yêu đời","background":"tease","items":[["filter","Tự tin là bộ lọc đẹp nhất","✨",{"style":"ocean","image":"confidence_filter-6703fe6e88.png","colors":["#171F37","#263350"]}],["choice","Tớ chọn vui, cậu chọn gì?","🌞",{"style":"cyber","image":"confidence_choice-1cf87211dd.png","colors":["#142642","#173852"]}],["version","Phiên bản này hơi đáng yêu","💖",{"style":"hologram","image":"confidence_version-a5da7658e0.png","colors":["#1D1032","#43285F"]}],["myway","Đẹp theo cách của tớ","🌷",{"style":"hologram","image":"confidence_myway-27022b568d.png","colors":["#1B1C36","#3D425F"]}],["imperfect","Không hoàn hảo, vẫn rất xịn","🌟",{"style":"silk","image":"confidence_imperfect-dcb30f9f89.png","colors":["#321B20","#6B3835"]}]]}];
+  var CAPTIONS = [{"id":"tease","section":"Trêu đùa","background":"tease","items":[["pretend","Thấy tớ rồi, đừng giả vờ","😏",{"style":"prism","image":"tease_pretend-f0846303d0.png","colors":["#0D201A","#2D503E"]}],["look","Nhìn gì, thích tớ à?","👀",{"style":"prism","image":"tease_look-b1be52f1aa.png","colors":["#100F30","#272350"]}],["shy","Thả tim đi, đừng ngại","💛",{"style":"silk","image":"tease_shy-afc122d686.png","colors":["#2C112F","#6A284E"]}],["remember","Xem ảnh hay đang nhớ tớ?","🤭",{"style":"galaxy","image":"tease_remember-e46956e6d9.png","colors":["#132642","#204E6F"]}],["flirt","Cười gì? Đang thả thính đấy","🎣",{"style":"ember","image":"tease_flirt-55fe53fb40.png","colors":["#271426","#5D3B4F"]}],["know","Tớ xinh, tớ biết rồi","💅",{"style":"bloom","image":"tease_know-84f2fe795a.png","colors":["#081D2C","#0F4D4C"]}],["selective","Độc thân có chọn lọc","😌",{"style":"galaxy","image":"tease_selective-58cab08195.png","colors":["#13192C","#314268"]}],["longlook","Cậu nhìn lâu là tớ ngại","🙈",{"style":"silk","image":"tease_longlook-a11fbff776.png","colors":["#0E1B2F","#1F4D6E"]}],["loveplease","Đã xem thì phải thương","🥺",{"style":"aurora","image":"tease_loveplease-1edeb63ff3.png","colors":["#102036","#1A3E5A"]}],["space","Tim cậu còn chỗ không?","💘",{"style":"bloom","image":"tease_space-3d02cc2d7c.png","colors":["#12243E","#193D59"]}],["fee","Ảnh miễn phí, nhớ tớ tính tiền","🤑",{"style":"sunset","image":"tease_fee-7d4a38e239.png","colors":["#13253F","#1A405C"]}],["behave","Đang ngoan, đừng chọc","😼",{"style":"aurora","image":"tease_behave-9c87deb363.png","colors":["#281527","#472C3D"]}],["price","Không chảnh, chỉ hơi đắt giá","👑",{"style":"prism","image":"tease_price-93ac92e098.png","colors":["#20120B","#57381C"]}],["early","Chưa yêu mà nhớ hơi nhiều","🫣",{"style":"hologram","image":"tease_early-31297fbbd8.png","colors":["#0E231C","#345B47"]}],["closer","Thích thì nhích lại đây","🫶",{"style":"neon","image":"tease_closer-5cc9f1b9f8.png","colors":["#071A27","#0D4445"]}],["reply","Không rep là tớ dỗi","😤",{"style":"bloom","image":"tease_reply-32a8659a82.png","colors":["#100F2F","#322C63"]}],["attention","Xin vía được cậu để ý","✨",{"style":"aurora","image":"tease_attention-5f4b7508c2.png","colors":["#28170E","#51341A"]}],["order","Chốt đơn một người thương","🛒",{"style":"sunset","image":"tease_order-d36026ff6c.png","colors":["#15143E","#352E68"]}],["secret","Nhìn vậy thôi, mê cậu lắm","🤫",{"style":"aurora","image":"tease_secret-b05c31f9c6.png","colors":["#071A29","#0F4E4D"]}],["standstill","Đứng yên, tớ thả thính","🎯",{"style":"bloom","image":"tease_standstill-0ccc54c5db.png","colors":["#102126","#204446"]}],["cute","Xinh thế này ai chịu nổi","😎",{"style":"sunset","image":"tease_cute-793e004adc.png","colors":["#132D25","#2B4D3C"]}],["seen","Xem rồi thì nhớ tớ đi","👀",{"style":"ocean","image":"tease_seen-b538b442f7.png","colors":["#0F0F2E","#272350"]}],["crush","Đẹp vậy mà vẫn độc thân","😌",{"style":"liquid","image":"tease_crush-2af64e8a2c.png","colors":["#2A180F","#5F3D1F"]}],["heart","Lỡ xem là phải thả tim","😏",{"style":"liquid","image":"tease_heart-7dbc4a025d.png","colors":["#1D1134","#492C66"]}],["busy","Bận đáng yêu, lát nhắn","💅",{"style":"ocean","image":"tease_busy-9d8e692d0d.png","colors":["#143128","#2A4A3A"]}],["snack","Không giận, chỉ thiếu trà sữa","🧋",{"style":"hologram","image":"tease_snack-427794f461.png","colors":["#13253F","#1D4766"]}],["signal","Phát tín hiệu: nhớ bạn","📡",{"style":"aurora","image":"tease_signal-c3538be808.png","colors":["#2D182C","#543548"]}],["sleep","Online đó, nhưng buồn ngủ","😴",{"style":"liquid","image":"tease_sleep-b1b4b104db.png","colors":["#1B1C36","#32354F"]}],["model","Camera thường, người phi thường","🤳",{"style":"cyber","image":"tease_model-3530c6174f.png","colors":["#23143D","#492C67"]}],["notice","Thông báo: cần được cưng","📣",{"style":"galaxy","image":"tease_notice-478808ea82.png","colors":["#0D1A2D","#1F4D6E"]}]]},{"id":"humor","section":"Hài hước","background":"joy","items":[["wallet","Ví mỏng, tâm hồn phú hộ","💸",{"style":"bloom","image":"humor_wallet-feaaa2472a.png","colors":["#28161A","#4B2726"]}],["deadline","Deadline dí, tớ vẫn lì","🫠",{"style":"sunset","image":"humor_deadline-c0a4555844.png","colors":["#143128","#325744"]}],["attitude","Hết tiền nhưng còn thần thái","😎",{"style":"prism","image":"humor_attitude-cad748e545.png","colors":["#1B0F2F","#4D2E6C"]}],["awake","Dậy rồi, hồn chưa tới","👻",{"style":"prism","image":"humor_awake-a37aec1770.png","colors":["#181930","#3F4462"]}],["natural","Đẹp tự nhiên, lười tự phát","🦥",{"style":"ember","image":"humor_natural-c8445ca789.png","colors":["#12262B","#204547"]}],["maintenance","Não đang bảo trì","🧠",{"style":"aurora","image":"humor_maintenance-7de1434483.png","colors":["#250E28","#562041"]}],["eatfirst","Ăn trước, tính sau","🍜",{"style":"sunset","image":"humor_eatfirst-7da6f87d0b.png","colors":["#0F1D33","#1C4463"]}],["salary","Lương chưa về, đơn đã tới","📦",{"style":"aurora","image":"humor_salary-540a1e85e4.png","colors":["#111032","#2C2758"]}],["rest","Chăm chỉ nghỉ ngơi","🛌",{"style":"silk","image":"humor_rest-61d8a54865.png","colors":["#23140C","#59391D"]}],["hungry","Bụng đói, miệng vẫn cười","😋",{"style":"cyber","image":"humor_hungry-4698db8060.png","colors":["#141B30","#2F3F63"]}],["sleepy","Chưa giàu nhưng rất buồn ngủ","😴",{"style":"liquid","image":"humor_sleepy-166ae52e3a.png","colors":["#2B190F","#4E3219"]}],["lag","Mặt tỉnh, đầu đang lag","🌀",{"style":"neon","image":"humor_lag-bd502f912f.png","colors":["#311335","#552041"]}],["subject","Giỏi nhất môn nằm nghỉ","🏆",{"style":"galaxy","image":"humor_subject-f05e756e10.png","colors":["#143027","#294A3A"]}],["alarm","Sống lỗi với báo thức","⏰",{"style":"ocean","image":"humor_alarm-a5edf8a2f8.png","colors":["#151440","#272351"]}],["gossip","Pin yếu mà vẫn hóng","🍿",{"style":"silk","image":"humor_gossip-2f05829d4b.png","colors":["#17182E","#30344C"]}]]},{"id":"love","section":"Tình yêu","background":"love","items":[["choose","Tim tớ chọn cậu rồi","💗",{"style":"ocean","image":"love_choose-d96dce875d.png","colors":["#341C22","#5D312F"]}],["withyou","Đi đâu cũng muốn có cậu","🫶",{"style":"cyber","image":"love_withyou-82c81d9062.png","colors":["#29102C","#612448"]}],["soft","Gặp cậu là ngày đẹp","🌷",{"style":"prism","image":"love_soft-4a087f68fa.png","colors":["#2A1629","#674157"]}],["little","Thương cậu thêm một chút","💕",{"style":"cyber","image":"love_little-e322d0fa6d.png","colors":["#081E2F","#10504F"]}],["home","Bên cậu là thấy nhà","🏡",{"style":"neon","image":"love_home-cc1a3d73ef.png","colors":["#142A30","#22494A"]}],["hug","Gửi cậu một cái ôm","🤍",{"style":"bloom","image":"love_hug-49993c3c36.png","colors":["#1B1C36","#383C57"]}],["miss","Nhớ cậu, không cần lý do","💌",{"style":"liquid","image":"love_miss-24845da925.png","colors":["#071826","#105352"]}],["smile","Cậu cười là tớ thua","🥰",{"style":"ember","image":"love_smile-562e28ceee.png","colors":["#162D33","#1F4243"]}],["wait","Chừa một chỗ cạnh tớ nhé","💞",{"style":"hologram","image":"love_wait-a62057abc9.png","colors":["#141A2F","#314267"]}],["simple","Thích cậu, thế thôi","💘",{"style":"neon","image":"love_simple-bac6bedf2d.png","colors":["#081D2D","#115A58"]}]]},{"id":"joy","section":"Vui vẻ","background":"joy","items":[["enough","Hôm nay vui vừa đủ","🌞",{"style":"cyber","image":"joy_enough-dab80fd762.png","colors":["#2A1629","#664056"]}],["vitamin","Nạp một chút vitamin cười","🍊",{"style":"galaxy","image":"joy_vitamin-050193247d.png","colors":["#12233C","#173750"]}],["happy","Đang bận yêu đời","🌈",{"style":"liquid","image":"joy_happy-8b3b65a09e.png","colors":["#23143D","#3F265A"]}],["broadcast","Niềm vui đang phát sóng","📻",{"style":"bloom","image":"joy_broadcast-d016470dd7.png","colors":["#311B1F","#613330"]}],["sun","Mang nắng về nhà","☀️",{"style":"prism","image":"joy_sun-308e201e3c.png","colors":["#0A2437","#105453"]}],["luck","May mắn ghé chơi rồi","🍀",{"style":"ember","image":"joy_luck-023168ccbe.png","colors":["#100F2F","#282352"]}],["photo","Chụp vội một ngày xinh","📸",{"style":"ocean","image":"joy_photo-64672706c8.png","colors":["#261643","#472B65"]}],["weekend","Cuối tuần nằm trong tim","🎈",{"style":"ember","image":"joy_weekend-f1153a3a0d.png","colors":["#311B1F","#6C3935"]}],["save","Một ngày đáng lưu lại","✨",{"style":"liquid","image":"joy_save-4d16cb7762.png","colors":["#15143F","#352F68"]}],["laugh","Cười lên, ảnh đang đẹp","😆",{"style":"aurora","image":"joy_laugh-a8754e46e7.png","colors":["#0E221B","#2D4F3E"]}]]},{"id":"mood","section":"Cảm xúc","background":"mood","items":[["rain","Hôm nay lòng hơi mưa","🌧️",{"style":"sunset","image":"mood_rain-4a654b1ae3.png","colors":["#250E28","#5D2346"]}],["quiet","Cho tớ yên một chút","🌙",{"style":"silk","image":"mood_quiet-28172e70c4.png","colors":["#29102C","#511E3E"]}],["thought","Có vài điều chưa nói","💭",{"style":"ember","image":"mood_thought-6944e9a297.png","colors":["#111032","#272250"]}],["slow","Đang học cách chậm lại","🍃",{"style":"cyber","image":"mood_slow-a216d084c2.png","colors":["#122C24","#254334"]}],["hug","Một cái ôm là đủ","🫂",{"style":"liquid","image":"mood_hug-e4469b03ac.png","colors":["#15162A","#3B3F5B"]}],["tired","Hết pin, cần được thương","🪫",{"style":"ocean","image":"mood_tired-15625d5b32.png","colors":["#2A102D","#4E1D3C"]}],["okay","Không ổn cũng không sao","🤍",{"style":"neon","image":"mood_okay-f38da52d88.png","colors":["#351D22","#613330"]}],["hope","Ngày mai mình thử lại","🌅",{"style":"hologram","image":"mood_hope-245a949bbd.png","colors":["#121136","#302A60"]}],["memory","Có người nằm trong ký ức","🎞️",{"style":"neon","image":"mood_memory-23b05b34c1.png","colors":["#112138","#173750"]}],["feeling","Chẳng biết gọi tên cảm xúc","🫧",{"style":"sunset","image":"mood_feeling-4d86f30d50.png","colors":["#281745","#492C66"]}]]},{"id":"friends","section":"Bạn bè","background":"love","items":[["karma","Bạn thân, nghiệp ai nấy giữ","🤝",{"style":"neon","image":"friends_karma-a5bfb0375d.png","colors":["#0F0E2D","#302B60"]}],["stories","Có bạn là có chuyện kể","💬",{"style":"galaxy","image":"friends_stories-587481d12e.png","colors":["#251324","#563649"]}],["together","Đi cùng nhau mới vui","🎈",{"style":"prism","image":"friends_together-20f945b5cd.png","colors":["#2D1130","#4D1D3B"]}],["call","Bạn gọi, tớ có mặt","🫂",{"style":"silk","image":"friends_call-0b0e3e6484.png","colors":["#29161A","#4C2827"]}],["snacks","Đồng đội hệ ăn vặt","🍟",{"style":"galaxy","image":"friends_snacks-cf1c4b4c96.png","colors":["#13253F","#183A55"]}]]},{"id":"daily","section":"Đời thường","background":"mood","items":[["coffee","Cà phê trước, thế giới sau","☕",{"style":"hologram","image":"daily_coffee-db423704d1.png","colors":["#0F251E","#2B4D3C"]}],["study","Học một chút, mơ thật nhiều","📚",{"style":"ember","image":"daily_study-be2c48e577.png","colors":["#2C172B","#643F55"]}],["offwork","Tan làm là hồi sinh","🌅",{"style":"hologram","image":"daily_offwork-feab508772.png","colors":["#261642","#382251"]}],["anywhere","Đi đâu cũng được, miễn vui","🛵",{"style":"galaxy","image":"daily_anywhere-fe30e6bbd7.png","colors":["#161440","#26224E"]}],["ordinary","Ngày bình thường, ảnh xinh","📸",{"style":"neon","image":"daily_ordinary-1aa76b7bc0.png","colors":["#143027","#2D503E"]}]]},{"id":"confidence","section":"Tự tin · Yêu đời","background":"tease","items":[["filter","Tự tin là bộ lọc đẹp nhất","✨",{"style":"ocean","image":"confidence_filter-6703fe6e88.png","colors":["#171F37","#263350"]}],["choice","Tớ chọn vui, cậu chọn gì?","🌞",{"style":"cyber","image":"confidence_choice-1cf87211dd.png","colors":["#142642","#173852"]}],["version","Phiên bản này hơi đáng yêu","💖",{"style":"hologram","image":"confidence_version-a5da7658e0.png","colors":["#1D1032","#43285F"]}],["myway","Đẹp theo cách của tớ","🌷",{"style":"hologram","image":"confidence_myway-27022b568d.png","colors":["#1B1C36","#3D425F"]}],["imperfect","Không hoàn hảo, vẫn rất xịn","🌟",{"style":"silk","image":"confidence_imperfect-dcb30f9f89.png","colors":["#321B20","#6B3835"]}]]}];
   // END GENERATED CAPTION CATALOGUE
   var RC = /^https:\/\/(?:api\.revenuecat\.com|api\.rc-backup\.com|api-production\.8-lives-cat\.io)\/v1\/(?:receipts|subscribers\/[^/?#]+)\/?(?:\?[^#]*)?$/i;
   var RC_PROBE = /^https:\/\/(?:api\.revenuecat\.com|api\.rc-backup\.com|api-production\.8-lives-cat\.io)\/(?:v1|v2)\/(?:receipts|subscribers)(?:[/?]|$)/i;
   var FIREBASE = /^https:\/\/firebaseremoteconfig\.googleapis\.com\/v1\/projects\/(?:locket-4252a|869942740286)\/namespaces\/firebase:fetch\/?(?:\?[^#]*)?$/i;
   var FIREBASE_PROBE = /^https:\/\/firebaseremoteconfig\.googleapis\.com\/v1\/projects\/[^/?#]+\/namespaces\/[^/?#]+:fetch\/?(?:\?[^#]*)?$/i;
-  var STATUS = /^http:\/\/zhengzhin-status\.invalid\/(status|report\.json)(?:\?[^#]*)?$/i;
+  var STATUS = /^http:\/\/zhengzhin-status\.invalid\/(status|report\.json|frames)(?:\?[^#]*)?$/i;
   var HTTPS_CHECK = /^https:\/\/(api\.revenuecat\.com|firebaseremoteconfig\.googleapis\.com)\/zhengzhin-check(?:\?[^#]*)?$/i;
+
+  var PROFILE_SCHEMA = /^https:\/\/api\.locketcamera\.com\/fetchUserV2\/?(?:\?[^#]*)?$/i;
 
   function log(message) {
     // Deliberately omit URLs, headers, IDs and response bodies from logs.
@@ -44,7 +50,7 @@
     var state = { schema: 1, version: VERSION, services: {} };
     try {
       if (typeof $persistentStore !== "undefined") {
-        ["firebase", "revenuecat", "unidentified_revenuecat", "runtime", "https_revenuecat", "https_firebase"].forEach(function (service) {
+        ["firebase", "revenuecat", "unidentified_revenuecat", "runtime", "https_revenuecat", "https_firebase", "profile_schema"].forEach(function (service) {
           try {
             var parsed = JSON.parse($persistentStore.read(STATE_KEY + "_" + service) || "null");
             if (record(parsed) && parsed.schema === 1 && record(parsed.data) &&
@@ -90,8 +96,11 @@
     var state = readDiagnostics();
     var report = {
       runtime: VERSION,
+      build: BUILD,
       storageAvailable: storageWorking,
-      recipe: { seconds: VIDEO_SECONDS, uploadBytes: VIDEO_BYTES, captions: 94 },
+      recipe: { seconds: VIDEO_SECONDS, uploadBytes: VIDEO_BYTES, captions: 90, memberSince: MEMBER_SINCE },
+      customization: { selectedFrame: selectedFrame(), frameChoices: FRAME_CHOICES.map(function (f) { return f.id; }),
+        profileCover: "native_schema_unknown", blueBadge: "native_schema_unknown", animeCameraThemes: "native_schema_unknown" },
       observed: state.services,
       deviceFeaturesVerified: false,
       note: "Đây là request/response script đã quan sát, không phải xác nhận Locket đã activate hoặc mic/video đã hoạt động."
@@ -106,6 +115,7 @@
         var description = !data ? "Chưa quan sát thấy request qua script này."
           : data.action === "patched" ? "Đã sửa response gửi về app. Chưa xác nhận app đã áp dụng."
           : data.action === "partial" ? "Đã sửa một phần; có trường không khớp schema."
+          : data.action === "active_gold_date_patched" ? "Đã đổi ngày trong dữ liệu Gold; chưa xác nhận ngày hiển thị trong Locket."
           : data.action === "active_gold_preserved" ? "Response có Gold đang hoạt động; giữ nguyên."
           : data.action === "https_hook_seen" ? "Hook HTTPS đã chạy từ trình duyệt. Chưa chứng minh app Locket gửi request."
           : data.action === "request_seen" ? "Đã thấy request; chưa có kết quả response mới."
@@ -115,17 +125,144 @@
       }
       body = "<!doctype html><html lang=vi><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>Zhengzhin · Trạng thái</title>" +
         "<style>body{font:16px system-ui;background:#101522;color:#edf1ff;max-width:780px;margin:auto;padding:24px}section{background:#1d2639;border:1px solid #46516b;border-radius:16px;padding:18px;margin:16px 0}h1{font-size:27px}h2{font-size:20px}p{line-height:1.6}a{color:#b6c8ff}small{color:#b9c3d9}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px}strong{color:#ffd693}</style>" +
-        "<h1>Zhengzhin · Kiểm tra kết nối</h1><p>Script đang chạy: <strong>v" + VERSION + "</strong>. Mục tiêu: 60s · 100 MiB · 94 ghi chú.</p>" +
+        "<h1>Zhengzhin · Kiểm tra kết nối</h1><p>Script đang chạy: <strong>v" + VERSION + "</strong>. Mục tiêu: 60s · 100 MiB · 90 ghi chú. Bản tùy chỉnh 2.</p>" +
         (storageWorking ? "" : "<section><strong>Kho chẩn đoán không ghi/đọc được. Thiếu trạng thái ở đây chưa chứng minh app không có request; cần xem log script.</strong></section>") +
+        "<section><h2>Khung widget</h2><p><a href='/frames'>Chọn một trong 10 khung của bạn</a></p><p>Khung được chọn trong trang này, chưa thêm bộ chọn vào Locket.</p></section>" +
         card("RevenueCat", "revenuecat") + card("Firebase Remote Config", "firebase") +
         "<section><h2>Kiểm tra HTTPS từ Safari</h2><p><a href='https://api.revenuecat.com/zhengzhin-check'>Kiểm tra RevenueCat</a> · <a href='https://firebaseremoteconfig.googleapis.com/zhengzhin-check'>Kiểm tra Firebase</a></p><p>Chỉ trang có chữ Zhengzhin và v4.0.4 là response kiểm tra từ script. Trang lỗi Google/404 không phải kết quả thành công.</p></section>" +
         card("HTTPS RevenueCat qua trình duyệt", "https_revenuecat") + card("HTTPS Firebase qua trình duyệt", "https_firebase") +
         "<section><h2>Đọc kết quả</h2><p>Nếu chưa có request Firebase, đổi module chưa đủ để Locket tải cấu hình mới. Nếu response đã được sửa mà app vẫn cũ, cần kiểm tra activate/schema phía app. Trang này không tự xoá cache Locket hoặc cấp quyền mic.</p><p>Chỉ bật một module Locket. Bật proxy trước, mở Locket, rồi mở lại trang này.</p></section>" +
+        "<section><h2>Trang cá nhân và chủ đề máy ảnh</h2><p>Ảnh bìa/video, tích xanh tùy chỉnh và ảnh anime cho chủ đề máy ảnh chưa được triển khai vào giao diện Locket. Báo cáo chỉ ghi nhận cấu trúc dữ liệu để kiểm tra khả năng hỗ trợ; không lưu tên, ID, token hoặc ảnh cá nhân.</p></section>" +
         "<p><a href='/status?reload=1'>Tải lại trạng thái</a> · <a href='/report.json'>Xem báo cáo chẩn đoán</a></p><details><summary>Chi tiết có thể gửi để kiểm tra</summary><pre>" + escapeHTML(JSON.stringify(report, null, 2)) + "</pre></details></html>";
       headers["Content-Security-Policy"] = "default-src 'none'; style-src 'unsafe-inline'; frame-ancestors 'none'";
       headers["X-Content-Type-Options"] = "nosniff";
     }
     return { response: { status: 200, headers: headers, body: method === "HEAD" ? "" : body } };
+  }
+
+  function frameChoice(id) {
+    for (var i = 0; i < FRAME_CHOICES.length; i++) {
+      if (FRAME_CHOICES[i].id === id) return FRAME_CHOICES[i];
+    }
+    return null;
+  }
+
+  function selectedFrame() {
+    try {
+      if (typeof $persistentStore !== "undefined") {
+        var saved = JSON.parse($persistentStore.read(FRAME_SETTINGS_KEY) || "null");
+        if (record(saved) && saved.schema === 1 && frameChoice(saved.frame)) return saved.frame;
+      }
+    } catch (_) { /* Invalid preferences fall back to the first supplied frame. */ }
+    return "conan";
+  }
+
+  function framePage(request) {
+    var method = String(request.method || "GET").toUpperCase();
+    if (method !== "GET" && method !== "HEAD") {
+      return { response: { status: 405, headers: { Allow: "GET, HEAD" }, body: "Method not allowed" } };
+    }
+    var chosen = selectedFrame(), message = "", status = 200;
+    var requestURL = String(request.url || "");
+    var queryStart = requestURL.indexOf("?");
+    var query = queryStart < 0 ? "" : requestURL.slice(queryStart + 1);
+    // HEAD never changes a preference, even when the URL contains a selection.
+    if (method === "GET" && query) {
+      var match = /^frame=([a-z0-9-]+)$/.exec(query);
+      var choice = match ? frameChoice(match[1]) : null;
+      if (!choice) {
+        status = 400;
+        message = "Mẫu khung không hợp lệ. Lựa chọn hiện tại được giữ nguyên.";
+      } else {
+        var saved = false;
+        try {
+          if (typeof $persistentStore !== "undefined" &&
+              $persistentStore.write(JSON.stringify({ schema: 1, frame: choice.id }), FRAME_SETTINGS_KEY) !== false) {
+            var check = JSON.parse($persistentStore.read(FRAME_SETTINGS_KEY) || "null");
+            saved = record(check) && check.schema === 1 && check.frame === choice.id;
+          }
+        } catch (_) { /* Do not claim the selection was saved if storage failed. */ }
+        if (saved) {
+          chosen = choice.id;
+          message = "Đã lưu lựa chọn " + choice.name + ". Mở lại Locket để ứng dụng tải cấu hình; widget có thể cập nhật chậm.";
+        } else {
+          status = 503;
+          message = "Chưa lưu được lựa chọn trong Shadowrocket. Kiểm tra khả năng lưu của script rồi thử lại.";
+        }
+      }
+    }
+    var cards = FRAME_CHOICES.map(function (choice) {
+      var active = chosen === choice.id;
+      return "<a class='card" + (active ? " selected" : "") + "' href='/frames?frame=" + choice.id + "'>" +
+        "<img width='240' height='240' loading='lazy' src='" + escapeHTML(ASSET_BASE + choice.file + "?v=" + choice.revision) +
+        "' alt='" + escapeHTML(choice.name) + "'><span>" + escapeHTML(choice.name) + (active ? " · Đang chọn" : "") + "</span></a>";
+    }).join("");
+    var body = "<!doctype html><html lang=vi><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'>" +
+      "<title>Zhengzhin · Chọn khung widget</title><style>body{font:16px/1.6 system-ui;background:#101522;color:#edf1ff;max-width:900px;margin:auto;padding:22px}h1{font-size:26px}a{color:#b6c8ff}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:16px}.card{display:block;padding:10px;border:2px solid #46516b;border-radius:16px;text-align:center;text-decoration:none;background:#1d2639}.card.selected{border-color:#ffd469}.card img{display:block;width:100%;height:auto;background:repeating-conic-gradient(#333c4d 0% 25%,#202838 0% 50%) 50%/14px 14px;border-radius:12px}.card span{display:block;padding:8px 0}.message{padding:16px;background:#29354d;border-radius:12px}small{color:#bbc6dc}</style>" +
+      "<h1>Zhengzhin · 10 khung widget</h1><p>Chạm vào một mẫu để chọn. Lựa chọn được lưu trong Shadowrocket, áp dụng khi Locket nhận cấu hình mới.</p>" +
+      (message ? "<p class='message'>" + escapeHTML(message) + "</p>" : "") +
+      "<div class='grid'>" + cards + "</div><p><small>Đây là trang chọn khung đi kèm module, mở trong Safari. Chưa thêm bộ chọn vào giao diện Locket. Một khung được gửi cho các widget dùng cùng cấu hình này; chưa kiểm chứng hiển thị trên iPhone.</small></p>" +
+      "<p><a href='/status'>Xem trạng thái</a> · <a href='/report.json'>Xem báo cáo</a></p></html>";
+    return { response: { status: status, headers: {
+      "Content-Type": "text/html; charset=utf-8", "Cache-Control": "no-store", "X-Content-Type-Options": "nosniff",
+      "Content-Security-Policy": "default-src 'none'; img-src https://raw.githubusercontent.com; style-src 'unsafe-inline'; frame-ancestors 'none'"
+    }, body: method === "HEAD" ? "" : body } };
+  }
+
+  function schemaFieldAllowed(key) {
+    return ["enabled", "themes", "items", "catalog", "catalogue", "colors", "background", "image", "image_url",
+      "url", "preview_url", "thumbnail", "thumbnail_url", "asset", "asset_url", "assets", "id", "uid", "name",
+      "title", "type", "badge", "cover", "video", "duration", "max_duration", "max_duration_ms", "max_file_size",
+      "profile", "camera", "camera_roll", "filters", "sheet_filters", "picker_filters", "filter_ids", "placement",
+      "start_at", "end_at", "show_filter_button", "sheet_enabled", "allows_custom_filters", "default", "gold", "free",
+      "safety_enabled", "feature_gates", "camera_theme", "camera_themes", "default_theme", "default_theme_id"].indexOf(key) !== -1;
+  }
+
+  function schemaShape(value, depth) {
+    if (value === null) return "null";
+    if (Array.isArray(value)) return { type: "array", count: value.length, sample: depth > 0 && value.length ? schemaShape(value[0], depth - 1) : null };
+    if (!record(value)) return typeof value;
+    if (depth <= 0) return "object";
+    var fields = {}, keys = Object.keys(value);
+    keys.filter(schemaFieldAllowed).slice(0, 16).forEach(function (key) {
+      fields[key] = schemaShape(value[key], depth - 1);
+    });
+    return { type: "object", fields: fields, unknownFieldCount: keys.filter(function (key) { return !schemaFieldAllowed(key); }).length };
+  }
+
+  function nativeSchemaDiagnostics(entries) {
+    var shapes = {};
+    var allowedEntries = ["camera_theme", "camera_themes", "camera_theme_config", "camera_themes_config", "camera_filter_config",
+      "camera_appearance_config", "appearance", "appearance_config", "profile", "profile_config", "profile_style_config",
+      "profile_styles", "profile_cover", "profile_cover_config", "profile_cover_enabled", "profile_badge", "profile_badge_visible",
+      "cover_config", "widget_frame_event", "widget_frames", "widget_frames_config", "custom_widget_frames_enabled", "feature_gates"];
+    var keys = Object.keys(entries);
+    keys.filter(function (key) { return allowedEntries.indexOf(key) !== -1; }).slice(0, 18).forEach(function (key) {
+      var value = entries[key];
+      if (typeof value === "string") {
+        try { value = JSON.parse(value); } catch (_) { /* Store the type, never the original string. */ }
+      }
+      shapes[key] = schemaShape(value, 3);
+    });
+    var unknown = keys.filter(function (key) { return /theme|appearance|profile|cover|badge|widget|filter/i.test(key) && allowedEntries.indexOf(key) === -1; }).length;
+    event("firebase", { nativeConfigShape: shapes, nativeConfigUnknownEntryCount: unknown });
+  }
+
+  function observeProfileSchema(response) {
+    if (!record(response) || statusCode(response) < 200 || statusCode(response) >= 300 ||
+        typeof response.body !== "string" || response.body.length > 1048576) return;
+    var payload;
+    try { payload = JSON.parse(response.body); } catch (_) { return; }
+    if (!record(payload) || !record(payload.result) || payload.result.status !== 200 || !record(payload.result.data)) return;
+    var data = payload.result.data, shape = {};
+    // Fixed allowlist. Names, IDs, URLs, tokens, image bytes and field values are never stored.
+    ["badge", "profile_picture_url", "cover", "cover_url", "cover_photo_url", "cover_video_url",
+      "profile_cover", "profile_cover_url", "profile_cover_video_url", "member_since", "gold_since", "verified"].forEach(function (key) {
+      if (Object.prototype.hasOwnProperty.call(data, key)) {
+        shape[key] = data[key] === null ? "null" : Array.isArray(data[key]) ? "array" : typeof data[key];
+      }
+    });
+    event("profile_schema", { action: "shape_observed", fields: shape });
   }
 
   function identity(request) {
@@ -197,20 +334,28 @@
     var oldGold = record(entitlements.Gold) ? entitlements.Gold : {};
     var currentProduct = oldGold.product_identifier;
     var currentSubscription = subscriptions[currentProduct];
+    var purchase = MEMBER_SINCE;
     if (record(currentSubscription) &&
         (oldGold.expires_date === null || Date.parse(oldGold.expires_date) > Date.now()) &&
         (currentSubscription.expires_date === null || Date.parse(currentSubscription.expires_date) > Date.now())) {
-      log("revenuecat: existing active Gold preserved");
-      event("revenuecat", { action: "active_gold_preserved", responseAt: Date.now() });
-      return false;
+      var changed = oldGold.purchase_date !== purchase || currentSubscription.purchase_date !== purchase ||
+        currentSubscription.original_purchase_date !== purchase || subscriber.original_purchase_date !== purchase;
+      if (changed) {
+        entitlements.Gold = Object.assign({}, oldGold, { purchase_date: purchase });
+        subscriptions[currentProduct] = Object.assign({}, currentSubscription, { purchase_date: purchase, original_purchase_date: purchase });
+        subscriber.original_purchase_date = purchase;
+      }
+      log(changed ? "revenuecat: local membership date updated; active subscription metadata preserved" : "revenuecat: existing active Gold preserved");
+      event("revenuecat", { action: changed ? "active_gold_date_patched" : "active_gold_preserved", responseAt: Date.now(), memberSince: purchase });
+      return changed;
     }
     var product = typeof currentProduct === "string" && /^locket_/i.test(currentProduct)
       ? currentProduct : "locket_1600_1y";
     var previous = record(subscriptions[product]) ? subscriptions[product] : {};
-    var purchase = "2024-01-01T00:00:00Z";
     var expiration = "2099-12-31T23:59:59Z";
     subscriber.subscriptions = subscriptions;
     subscriber.entitlements = entitlements;
+    subscriber.original_purchase_date = purchase;
     subscriptions[product] = Object.assign({}, previous, {
       purchase_date: purchase,
       original_purchase_date: purchase,
@@ -493,16 +638,25 @@
 
   function widgetPatch(entries) {
     var mode = typeof $argument === "string" ? $argument : "";
-    if (mode === "looks-aura-frame") mode = "aura-frame";
+    if (mode === "looks-aura-frame") {
+      var choice = frameChoice(selectedFrame());
+      var changed = mergeEntry(entries, "widget_frame_event", {
+        uid: "zhengzhin_" + choice.id + "_" + choice.revision + "_custom2",
+        url: ASSET_BASE + choice.file + "?v=" + choice.revision,
+        placement: "below", use_local_time_zone: true,
+        start_at: "2024-01-01T00:00:00", end_at: "2099-12-31T23:59:59"
+      });
+      return changed ? choice.id + "-event-experimental" : "skipped-schema";
+    }
     var theme = { "aura-frame": "aura", "gold-frame": "gold", "rose-frame": "rose" }[mode];
     if (!theme) return "off";
-    var changed = mergeEntry(entries, "widget_frame_event", {
+    var legacy = mergeEntry(entries, "widget_frame_event", {
       uid: "zhengzhin_" + theme + "_frame_v3",
       url: ASSET_BASE + "widget-" + theme + ".png?v=" + VERSION,
       placement: "below", use_local_time_zone: true,
       start_at: "2024-01-01T00:00:00", end_at: "2099-12-31T23:59:59"
     });
-    return changed ? theme + "-event-experimental" : "skipped-schema";
+    return legacy ? theme + "-event-experimental" : "skipped-schema";
   }
 
   function firebasePatch(payload) {
@@ -516,6 +670,7 @@
       return false;
     }
     var entries = payload.entries;
+    nativeSchemaDiagnostics(entries);
     configDiagnostics(entries);
     mergeEntry(entries, "feature_gates", {
       camera_roll: "enabled",
@@ -649,13 +804,18 @@
     if (typeof $request === "undefined") return {};
     var url = String($request.url || "");
     var statusMatch = STATUS.exec(url);
-    if (statusMatch && typeof $response === "undefined") return statusPage($request, statusMatch[1] === "report.json");
+    if (statusMatch && typeof $response === "undefined") return statusMatch[1].toLowerCase() === "frames" ? framePage($request) : statusPage($request, statusMatch[1].toLowerCase() === "report.json");
     var check = HTTPS_CHECK.exec(url);
     if (check && typeof $response === "undefined") {
       var service = check[1].toLowerCase() === "api.revenuecat.com" ? "https_revenuecat" : "https_firebase";
       event(service, { action: "https_hook_seen" });
       return { response: { status: 200, headers: { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "no-store", "Content-Security-Policy": "default-src 'none'" },
         body: "<!doctype html><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><h1>Zhengzhin · HTTPS check v" + VERSION + "</h1><p>Script đã nhận request HTTPS kiểm tra từ trình duyệt qua host này. Đây chưa phải bằng chứng Locket gửi request hoặc tính năng native hoạt động.</p><p><a href='http://zhengzhin-status.invalid/status'>Quay lại trang trạng thái</a></p>" } };
+    }
+    if (PROFILE_SCHEMA.test(url)) {
+      CURRENT_SERVICE = "profile_schema";
+      if (typeof $response !== "undefined") observeProfileSchema($response);
+      return {};
     }
     var isRC = RC.test(url);
     var isFirebase = FIREBASE.test(url);

@@ -1,0 +1,117 @@
+{
+  "schema": 1,
+  "kind": "static-widget-frames",
+  "deviceVerified": false,
+  "frames": [
+    {
+      "id": "conan",
+      "name": "Conan",
+      "file": "frame-conan.png",
+      "url": "https://raw.githubusercontent.com/zhengzhin07/-locket-zhengzhin/main/frame-conan.png?v=6833730b75e5",
+      "sha256": "6833730b75e5c54e556f875ab54a0e2110ad961e04b70bfaf04ce641dec6b96c",
+      "revision": "6833730b75e5",
+      "bytes": 1823969,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "kitty",
+      "name": "Hello Kitty",
+      "file": "frame-kitty.png",
+      "url": "https://raw.githubusercontent.com/zhengzhin07/-locket-zhengzhin/main/frame-kitty.png?v=bf7ace2db7b2",
+      "sha256": "bf7ace2db7b271fc272caa841063741f20f6a5529eb0b055ff4795e4ad15ac96",
+      "revision": "bf7ace2db7b2",
+      "bytes": 1156208,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "masha",
+      "name": "Masha và Gấu",
+      "file": "frame-masha.png",
+      "url": "https://raw.githubusercontent.com/zhengzhin07/-locket-zhengzhin/main/frame-masha.png?v=da04c824b554",
+      "sha256": "da04c824b554b9000ee3afd41356c6068cc3aca33f09c5d6c685699f2961ad4b",
+      "revision": "da04c824b554",
+      "bytes": 1588357,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "niko",
+      "name": "Niko Chan",
+      "file": "frame-niko.png",
+      "url": "https://raw.githubusercontent.com/zhengzhin07/-locket-zhengzhin/main/frame-niko.png?v=5c9ae7a35213",
+      "sha256": "5c9ae7a352133cbb4fb9c55c9b24c83494c826b813b352140918090531b67879",
+      "revision": "5c9ae7a35213",
+      "bytes": 1171863,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "truong-giang",
+      "name": "Trường Giang Bá Khí",
+      "file": "frame-truong-giang.png",
+      "url": "https://raw.githubusercontent.com/zhengzhin07/-locket-zhengzhin/main/frame-truong-giang.png?v=4015449c60c2",
+      "sha256": "4015449c60c2891270bac165ce024c1892fe1594af13d9650e7a3291c1aa78b5",
+      "revision": "4015449c60c2",
+      "bytes": 1454597,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "shizuka",
+      "name": "Doraemon và Shizuka",
+      "file": "frame-shizuka.png",
+      "url": "https://raw.githubusercontent.com/zhengzhin07/-locket-zhengzhin/main/frame-shizuka.png?v=567c3b29a080",
+      "sha256": "567c3b29a0806769c736635e58f7099216c8efb8176c730675f34fb0b064a5bd",
+      "revision": "567c3b29a080",
+      "bytes": 1195823,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "anime",
+      "name": "Anime tím",
+      "file": "frame-anime.png",
+      "url": "https://raw.githubusercontent.com/zhengzhin07/-locket-zhengzhin/main/frame-anime.png?v=f39deb6a8ff6",
+      "sha256": "f39deb6a8ff6cd70cf5350fd3698daae4d261453cfdf9308d09c171ff314b278",
+      "revision": "f39deb6a8ff6",
+      "bytes": 1722069,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "nezuko",
+      "name": "Nezuko",
+      "file": "frame-nezuko.png",
+      "url": "https://raw.githubusercontent.com/zhengzhin07/-locket-zhengzhin/main/frame-nezuko.png?v=056693418752",
+      "sha256": "0566934187529671a547b73e050253ea56e152c7e3a491e163fae7dac071ecb7",
+      "revision": "056693418752",
+      "bytes": 1340259,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "cr7",
+      "name": "CR7",
+      "file": "frame-cr7.png",
+      "url": "https://raw.githubusercontent.com/zhengzhin07/-locket-zhengzhin/main/frame-cr7.png?v=4cfd636e56d0",
+      "sha256": "4cfd636e56d021a37461360ba77aaa59c3f3bc77eacd2b54b8d8eec976535305",
+      "revision": "4cfd636e56d0",
+      "bytes": 2112120,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "shin",
+      "name": "Shin",
+      "file": "frame-shin.png",
+      "url": "https://raw.githubusercontent.com/zhengzhin07/-locket-zhengzhin/main/frame-shin.png?v=3a8ac597638e",
+      "sha256": "3a8ac597638e30e950424c94ecc18658cb6a1af6e1c25116865f185118c7466d",
+      "revision": "3a8ac597638e",
+      "bytes": 859825,
+      "width": 1254,
+      "height": 1254
+    }
+  ]
+}

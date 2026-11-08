@@ -1,14 +1,14 @@
-#!name=Zhengzhin • Locket Base • v4.0.4
-#!desc=Bản nền tùy chỉnh của Zhengzhin. Giữ logic Looks/Gold/media/ghi chú/khung Aura từ bản gốc v4.0.4. Chỉ bật một module Locket; chưa xác nhận trên iPhone.
+#!name=Zhengzhin • Locket tùy chỉnh 2
+#!desc=Bỏ nhóm quảng bá; 90 chú thích, ngày Gold thử nghiệm 16/03/2007, 10 khung widget chọn tại http://zhengzhin-status.invalid/frames. Chỉ bật một module Locket.
 #!author=Zhengzhin — bản tùy chỉnh; giấy phép nguồn trong LICENSE
 #!moduleUrl=https://raw.githubusercontent.com/zhengzhin07/-locket-zhengzhin/main/Locket-Zhengzhin.sgmodule
 
 [Script]
-zhengzhin4_status = type=http-request, pattern=^http://zhengzhin-status\.invalid/(?:status|report\.json)(?:\?[^#]*)?$, script-path=https://raw.githubusercontent.com/zhengzhin07/-locket-zhengzhin/main/locket.js?v=zhengzhin-2, timeout=10
-zhengzhin4_https = type=http-request, pattern=^https://(?:api\.revenuecat\.com|firebaseremoteconfig\.googleapis\.com)/zhengzhin-check(?:\?[^#]*)?$, script-path=https://raw.githubusercontent.com/zhengzhin07/-locket-zhengzhin/main/locket.js?v=zhengzhin-2, timeout=10
-zhengzhin4_request = type=http-request, pattern=^https://(?:(?:api\.revenuecat\.com|api\.rc-backup\.com|api-production\.8-lives-cat\.io)/(?:v1|v2)/(?:receipts|subscribers)(?:[/?]|$)|firebaseremoteconfig\.googleapis\.com/v1/projects/[^/?#]+/namespaces/[^/?#]+:fetch/?(?:\?[^#]*)?$), script-path=https://raw.githubusercontent.com/zhengzhin07/-locket-zhengzhin/main/locket.js?v=zhengzhin-2, timeout=10
-zhengzhin4_revenuecat = type=http-response, pattern=^https://(?:api\.revenuecat\.com|api\.rc-backup\.com|api-production\.8-lives-cat\.io)/(?:v1|v2)/(?:receipts|subscribers)(?:[/?]|$), script-path=https://raw.githubusercontent.com/zhengzhin07/-locket-zhengzhin/main/locket.js?v=zhengzhin-2, requires-body=true, max-size=1048576, timeout=10
-zhengzhin4_firebase = type=http-response, pattern=^https://firebaseremoteconfig\.googleapis\.com/v1/projects/(?:locket-4252a|869942740286)/namespaces/firebase:fetch/?(?:\?[^#]*)?$, script-path=https://raw.githubusercontent.com/zhengzhin07/-locket-zhengzhin/main/locket.js?v=zhengzhin-2, argument=looks-aura-frame, requires-body=true, max-size=1048576, timeout=10
+zhengzhin4_status = type=http-request, pattern=^http://zhengzhin-status\.invalid/(?:status|report\.json|frames)(?:\?[^#]*)?$, script-path=https://raw.githubusercontent.com/zhengzhin07/-locket-zhengzhin/main/locket.js?v=custom-2, timeout=10
+zhengzhin4_https = type=http-request, pattern=^https://(?:api\.revenuecat\.com|firebaseremoteconfig\.googleapis\.com)/zhengzhin-check(?:\?[^#]*)?$, script-path=https://raw.githubusercontent.com/zhengzhin07/-locket-zhengzhin/main/locket.js?v=custom-2, timeout=10
+zhengzhin4_request = type=http-request, pattern=^https://(?:(?:api\.revenuecat\.com|api\.rc-backup\.com|api-production\.8-lives-cat\.io)/(?:v1|v2)/(?:receipts|subscribers)(?:[/?]|$)|firebaseremoteconfig\.googleapis\.com/v1/projects/[^/?#]+/namespaces/[^/?#]+:fetch/?(?:\?[^#]*)?$), script-path=https://raw.githubusercontent.com/zhengzhin07/-locket-zhengzhin/main/locket.js?v=custom-2, timeout=10
+zhengzhin4_revenuecat = type=http-response, pattern=^https://(?:api\.revenuecat\.com|api\.rc-backup\.com|api-production\.8-lives-cat\.io)/(?:v1|v2)/(?:receipts|subscribers)(?:[/?]|$), script-path=https://raw.githubusercontent.com/zhengzhin07/-locket-zhengzhin/main/locket.js?v=custom-2, requires-body=true, max-size=1048576, timeout=10
+zhengzhin4_firebase = type=http-response, pattern=^https://firebaseremoteconfig\.googleapis\.com/v1/projects/(?:locket-4252a|869942740286)/namespaces/firebase:fetch/?(?:\?[^#]*)?$, script-path=https://raw.githubusercontent.com/zhengzhin07/-locket-zhengzhin/main/locket.js?v=custom-2, argument=looks-aura-frame, requires-body=true, max-size=1048576, timeout=10
 
 [Host]
 zhengzhin-status.invalid = 198.18.0.1

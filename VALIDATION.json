@@ -1,0 +1,32 @@
+{
+  "build": "zhengzhin-custom-2",
+  "deviceVerified": false,
+  "integrationGroupsPassed": 16,
+  "profileObserverCasesPassed": 36,
+  "browserFrameCards": 10,
+  "nativeFeaturesPending": [
+    "profile_cover_photo_or_video",
+    "custom_blue_checkmark",
+    "anime_camera_theme_images"
+  ],
+  "files": {
+    "LICENSE": "3f2c888df14359457f44080afab31d074ada60594e335f02012369d420b68060",
+    "Locket-Zhengzhin-Chan-Doan.sgmodule": "0202540176a5d4626f90408b3809feeee7a8155236af8876bfb0640afe5e5751",
+    "Locket-Zhengzhin.sgmodule": "d48778767620e39d9a79a5498adf47ef0c02a82b3c3bb0ddab298564656cdaea",
+    "NOTICE.txt": "250a0c3544f3e74f443830707cf4d00e35d4671c8f374779d53f80fa9e790a23",
+    "README.md": "475173fd199e90759ff071b61ac4d9b625592d32dbd75d3dea3e3cc1f8c24d9f",
+    "frame-anime.png": "f39deb6a8ff6cd70cf5350fd3698daae4d261453cfdf9308d09c171ff314b278",
+    "frame-conan.png": "6833730b75e5c54e556f875ab54a0e2110ad961e04b70bfaf04ce641dec6b96c",
+    "frame-cr7.png": "4cfd636e56d021a37461360ba77aaa59c3f3bc77eacd2b54b8d8eec976535305",
+    "frame-gallery.html": "61f94dd1b68ef2598906dd5e24e3942ad882e350bd511ff7e44b0acefc34e61c",
+    "frame-index.json": "b665b847d361b66c9dc74a2fdeebbac42ba7258c091f8267ccb93bfba54c5f60",
+    "frame-kitty.png": "bf7ace2db7b271fc272caa841063741f20f6a5529eb0b055ff4795e4ad15ac96",
+    "frame-masha.png": "da04c824b554b9000ee3afd41356c6068cc3aca33f09c5d6c685699f2961ad4b",
+    "frame-nezuko.png": "0566934187529671a547b73e050253ea56e152c7e3a491e163fae7dac071ecb7",
+    "frame-niko.png": "5c9ae7a352133cbb4fb9c55c9b24c83494c826b813b352140918090531b67879",
+    "frame-shin.png": "3a8ac597638e30e950424c94ecc18658cb6a1af6e1c25116865f185118c7466d",
+    "frame-shizuka.png": "567c3b29a0806769c736635e58f7099216c8efb8176c730675f34fb0b064a5bd",
+    "frame-truong-giang.png": "4015449c60c2891270bac165ce024c1892fe1594af13d9650e7a3291c1aa78b5",
+    "locket.js": "bc9ecdc24327e6194745ba71357a2e09c821fea3a940e61ba1fcbe4fea305d1f"
+  }
+}
